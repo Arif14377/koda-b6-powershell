@@ -1,13 +1,13 @@
 Perintah powershell:
-1. Get-ChildItem = untuk menampilkan isi dalam folder
+1. Get-ChildItem -Recurse = untuk menampilkan isi dalam folder (folder & file)
 2. Copy-Item = untuk menyalin item
 3. Remove-Item = menghapus item
 4. Install-Package = menginstall package
 5. Get-Process = menampilkan proses yang sedang berjalan
-6. New-Item = membuat item baru
+6. New-Item = membuat item baru (default file).
 7. Get-Help = menampilkan informasi command Powershell
 8. Move-Item = memindahkan item
-9. Get-Item = menampilkan folder dan file
+9. New-Item -ItemType Directory = membuat folder baru
 10. Restart-Computer = reboot
 11. Set-Location = berpindah lokasi directory
 12. Stop-Process = memberhentikan proses berjalan
@@ -15,7 +15,7 @@ Perintah powershell:
 14. Get-Package = manampilkan paket software yang sudah diinstall
 15. Stop-Computer = Shutdown
 16. Get-Location = menampilkan lokasi saat ini
-17. New-VirtualDisk = membuat virtual disk baru
+17. tree /F = menampilkan struktur folder dan file
 18. Uninstall-Package = uninstall software
 19. New-LocalUser = membuat user lokal baru
 20. Get-LocalUser = menampilkan akun user lokal
