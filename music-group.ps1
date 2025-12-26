@@ -8,7 +8,7 @@ $lagu = Get-ChildItem -Path ".\Music\*" -Name -Recurse
 $banyakFolder = $artis.Length
 $banyakLagu = $lagu.Length
 # echo $banyakFolder
-echo $banyakLagu
+# echo $banyakLagu
 # echo $artis[1]
 # echo $lagu[1]
 # $laguToMove

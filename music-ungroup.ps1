@@ -14,7 +14,9 @@ foreach ($artist in $namaArtist) {
     $namaLagu = Get-ChildItem -Path ".\Music\$artist" -Name
 
     foreach ($lagu in $namaLagu) {
-        Rename-Item -Path ".\Music\$artist\$lagu" -NewName "$artist - $lagu"
+        if ($lagu -notmatch $artist) {
+            Rename-Item -Path ".\Music\$artist\$lagu" -NewName "$artist - $lagu"
+        }
     }
     Move-Item -Path ".\Music\$artist\*" -Destination ".\Music\"
 }
